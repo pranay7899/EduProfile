@@ -1,0 +1,176 @@
+/* Custom Design System for Student Management System */
+:root {
+    --primary-color: #4f46e5;
+    --primary-hover: #4338ca;
+    --secondary-color: #0ea5e9;
+    --dark-bg: #0f172a;
+    --light-bg: #f8fafc;
+    --border-color: #e2e8f0;
+    --card-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #334155;
+    background-color: #f8fafc;
+}
+
+.font-outfit {
+    font-family: 'Outfit', sans-serif;
+}
+
+/* Navbar Enhancements */
+.custom-navbar {
+    background: #0f172a !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.brand-icon {
+    width: 34px;
+    height: 34px;
+    background: linear-gradient(135deg, #4f46e5 0%, #0ea5e9 100%) !important;
+}
+
+.nav-link-custom {
+    color: #94a3b8 !important;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.nav-link-custom:hover, .nav-link-custom.active {
+    color: #ffffff !important;
+}
+
+/* Card Styling */
+.card-custom {
+    border: 1px solid #e2e8f0;
+    border-radius: 1rem;
+    box-shadow: var(--card-shadow);
+    background: #ffffff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-custom-header {
+    background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+    border-bottom: 1px solid #e2e8f0;
+    border-top-left-radius: 1rem !important;
+    border-top-right-radius: 1rem !important;
+    padding: 1.25rem 1.5rem;
+}
+
+/* Dashboard Banner */
+.welcome-banner {
+    background: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #4338ca 100%);
+    color: #ffffff;
+    border-radius: 1.25rem;
+    padding: 2.25rem 2rem;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 15px 30px -10px rgba(79, 70, 229, 0.3);
+}
+
+.welcome-banner::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
+    border-radius: 50%;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-hover);
+    border-color: var(--primary-hover);
+    transform: translateY(-1px);
+}
+
+.btn-pill {
+    border-radius: 50rem;
+}
+
+/* Forms */
+.form-control, .form-select {
+    border-radius: 0.6rem;
+    padding: 0.65rem 0.9rem;
+    border: 1px solid #cbd5e1;
+    font-size: 0.95rem;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.15);
+}
+
+.form-label {
+    font-weight: 600;
+    color: #475569;
+    font-size: 0.88rem;
+    margin-bottom: 0.4rem;
+}
+
+/* Tables */
+.table-custom {
+    vertical-align: middle;
+}
+
+.table-custom th {
+    background-color: #f1f5f9;
+    color: #475569;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 700;
+    padding: 0.9rem 1rem;
+}
+
+.table-custom td {
+    padding: 0.9rem 1rem;
+    font-size: 0.92rem;
+}
+
+/* Filter Card */
+.filter-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.85rem;
+    padding: 1.25rem;
+}
+
+/* Detail List */
+.profile-detail-label {
+    font-weight: 600;
+    color: #64748b;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.profile-detail-value {
+    font-weight: 600;
+    color: #0f172a;
+    font-size: 1.05rem;
+}
+
+/* Pulse Badge */
+.badge-soft-primary {
+    background-color: #e0e7ff;
+    color: #3730a3;
+}
+.badge-soft-success {
+    background-color: #dcfce7;
+    color: #166534;
+}
+.badge-soft-warning {
+    background-color: #fef9c3;
+    color: #854d0e;
+}
